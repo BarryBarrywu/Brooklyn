@@ -73,12 +73,19 @@ private extension BrooklynView {
     }
 }
 
+// MARK: - Layout
+extension BrooklynView {
+
+    override func layout() {
+        super.layout()
+        videoLayer.frame = bounds
+    }
+}
+
 // MARK: - Define Layers
 private extension BrooklynView {
 
     func defineVideoLayer() {
-        videoLayer.frame = bounds
-        videoLayer.autoresizingMask = [.layerWidthSizable, .layerHeightSizable]
         videoLayer.needsDisplayOnBoundsChange = true
         videoLayer.contentsGravity = .resizeAspect
         videoLayer.backgroundColor = Constant.backgroundColor.cgColor
