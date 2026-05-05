@@ -131,15 +131,21 @@ Bug fixes and improvements in this fork were developed with the assistance of [C
 defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Brooklyn path "$HOME/Library/Screen Savers/Brooklyn.saver"
 ```
 
+#### Homebrew（推荐）🍺
+
+```shell
+brew tap answer24/tap
+brew install --cask brooklyn --no-quarantine
+```
+
 #### 手动安装 :hand:
 
-1. 克隆本仓库：`git clone https://github.com/answer24/Brooklyn.git`
-2. 用 Xcode 打开 `Brooklyn.xcodeproj`，Build Scheme 选 `Brooklyn`，运行编译
-3. 在 `DerivedData` 产物目录找到 `Brooklyn.saver`，双击安装
-4. 若弹出"无法打开，因为它来自身份不明的开发者"，点击`好`
-5. 打开`系统设置` → `隐私与安全性`，点击底部的`仍要打开`
+1. 从 [Releases](https://github.com/answer24/Brooklyn/releases) 下载最新 `Brooklyn.saver.zip`，解压
+2. 双击 `Brooklyn.saver`
+3. 若弹出"无法打开，因为它来自身份不明的开发者"，点击`好`
+4. 打开`系统设置` → `隐私与安全性`，点击底部的`仍要打开`
 
-> ⚠️ **注意**：`brew install --cask brooklyn` 安装的是原作者 2020 年的旧版本，**不包含本 fork 的 bug 修复**，不建议使用。
+> ⚠️ **注意**：`brew install --cask brooklyn`（不加 tap）安装的是原作者 2020 年的旧版本，**不包含本 fork 的 bug 修复**，请使用上方带 `brew tap` 的命令。
 
 ### 卸载 🗑️
 
