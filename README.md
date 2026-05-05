@@ -133,30 +133,18 @@ defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Br
 
 #### 手动安装 :hand:
 
-1. 从 [Releases](https://github.com/answer24/Brooklyn/releases) 页面下载最新版 `Brooklyn.saver.zip`，或自行编译
-2. 双击打开 `Brooklyn.saver`
-3. 若弹出"无法打开，因为它来自身份不明的开发者"，点击`好`
-4. 打开`系统偏好设置` → `安全性与隐私` → `通用`
-5. 点击底部的`仍要打开`
+1. 克隆本仓库：`git clone https://github.com/answer24/Brooklyn.git`
+2. 用 Xcode 打开 `Brooklyn.xcodeproj`，Build Scheme 选 `Brooklyn`，运行编译
+3. 在 `DerivedData` 产物目录找到 `Brooklyn.saver`，双击安装
+4. 若弹出"无法打开，因为它来自身份不明的开发者"，点击`好`
+5. 打开`系统设置` → `隐私与安全性`，点击底部的`仍要打开`
 
-#### Homebrew 🍺
-
-```shell
-brew install --cask brooklyn --no-quarantine
-```
+> ⚠️ **注意**：`brew install --cask brooklyn` 安装的是原作者 2020 年的旧版本，**不包含本 fork 的 bug 修复**，不建议使用。
 
 ### 卸载 🗑️
 
-#### 手动卸载 :hand:
-
-- 在系统偏好设置中右键点击 Brooklyn，选择`删除 Brooklyn`，或
-- 手动删除 `/Library/Screen Savers/Brooklyn.saver` 或 `~/Library/Screen Savers/Brooklyn.saver`
-
-#### Homebrew 🍺
-
-```shell
-brew uninstall --cask brooklyn
-```
+- 在系统设置中右键点击 Brooklyn，选择`删除 Brooklyn`，或
+- 手动删除 `~/Library/Screen Savers/Brooklyn.saver`
 
 ### 系统要求 🔧
 
