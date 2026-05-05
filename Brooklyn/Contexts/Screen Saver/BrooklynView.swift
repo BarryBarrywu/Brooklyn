@@ -38,38 +38,21 @@ final class BrooklynView: ScreenSaverView {
         super.init(frame: frame, isPreview: isPreview)
         configure()
     }
+
 }
 
 // MARK: - Lifecycle
 extension BrooklynView {
-    
+
     override func startAnimation() {
         super.startAnimation()
+        syncVideoLayerFrame()
         manager.player.play()
     }
-    
+
     override func stopAnimation() {
         super.stopAnimation()
         manager.player.pause()
-    }
-}
-
-// MARK: - Configuration
-private extension BrooklynView {
-    
-    func configure() {
-        defineLayer()
-        setupLayer()
-    }
-    
-    func defineLayer() {
-        wantsLayer = true
-        defineVideoLayer()
-        layer = videoLayer
-    }
-    
-    func setupLayer() {
-        videoLayer.player = manager.player
     }
 }
 
@@ -78,17 +61,34 @@ extension BrooklynView {
 
     override func layout() {
         super.layout()
+        if videoLayer.superlayer == nil {
+            layer?.addSublayer(videoLayer)
+        }
+        syncVideoLayerFrame()
+    }
+
+    private func syncVideoLayerFrame() {
+        guard bounds.width > 0, bounds.height > 0 else { return }
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
         videoLayer.frame = bounds
+        CATransaction.commit()
     }
 }
 
-// MARK: - Define Layers
+// MARK: - Configuration
 private extension BrooklynView {
 
-    func defineVideoLayer() {
-        videoLayer.needsDisplayOnBoundsChange = true
-        videoLayer.contentsGravity = .resizeAspect
-        videoLayer.backgroundColor = Constant.backgroundColor.cgColor
+    func configure() {
+        wantsLayer = true
+        // videoLayer must be a SUBLAYER, not the backing layer (`layer = videoLayer`).
+        // When AVPlayerLayer is the backing layer, NSView sets internal properties
+        // (contentsGravity, anchorPoint) that interfere with videoGravity, causing
+        // the video to render at native size in a corner instead of being centered.
+        layer?.backgroundColor = Constant.backgroundColor.cgColor
+        layer?.addSublayer(videoLayer)
+        videoLayer.videoGravity = .resizeAspect
+        videoLayer.player = manager.player
     }
 }
 
