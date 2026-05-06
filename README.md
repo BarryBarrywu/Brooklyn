@@ -31,7 +31,7 @@ Before installing, please **close System Settings**.
 
 ```shell
 brew tap answer24/tap
-brew install --cask brooklyn
+brew install --cask answer24/tap/brooklyn
 ```
 
 > ⚠️ `brew install --cask brooklyn` (without the tap) installs the original 2020 version and does **not** include bug fixes from this fork.
@@ -109,7 +109,7 @@ Bug fixes and improvements in this fork were developed with the assistance of [C
 
 ```shell
 brew tap answer24/tap
-brew install --cask brooklyn
+brew install --cask answer24/tap/brooklyn
 ```
 
 > ⚠️ `brew install --cask brooklyn`（不加 tap）安装的是原作者 2020 年的旧版本，**不包含本 fork 的 bug 修复**。
