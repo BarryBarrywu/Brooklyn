@@ -42,7 +42,12 @@ final class LoopPlayer: AVQueuePlayer {
 
 // MARK: - Actions
 extension LoopPlayer {
-    
+
+    func stop() {
+        managedItemIDs.removeAll()
+        removeAllItems()
+    }
+
     func play(_ animation: Animation) {
         guard let item = AVPlayerItem(video: animation, extension: .mp4, for: LoopPlayer.self) else { return }
         actionAtItemEnd = .none
