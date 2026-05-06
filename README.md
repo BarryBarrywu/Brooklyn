@@ -60,8 +60,13 @@ Requires macOS 10.13 (High Sierra) or above.
 
 ## Troubleshooting 🤕
 
-If macOS blocks the screen saver as unidentified software, run this in Terminal to remove the quarantine flag:
+After installation (via Homebrew or manually), macOS may block Brooklyn the first time it loads with a message like *"Brooklyn.saver can't be opened because it is from an unidentified developer."*
 
+**Option 1 — System Settings (recommended):**
+1. Open `System Settings` → `Privacy & Security`
+2. Scroll down and click `Open Anyway` next to the Brooklyn message
+
+**Option 2 — Terminal:**
 ```shell
 sudo xattr -d com.apple.quarantine ~/"Library/Screen Savers/Brooklyn.saver"
 ```
@@ -126,8 +131,13 @@ brew install --cask answer24/tap/brooklyn
 
 ### 常见问题 🤕
 
-若系统将 Brooklyn 识别为恶意软件而无法打开，可在终端运行以下命令解除隔离：
+通过 Homebrew 或手动安装后，macOS 首次加载时可能提示"无法打开，因为它来自身份不明的开发者"。
 
+**方法一 — 系统设置（推荐）：**
+1. 打开`系统设置` → `隐私与安全性`
+2. 向下滚动，点击 Brooklyn 旁边的`仍然打开`
+
+**方法二 — 终端：**
 ```shell
 sudo xattr -d com.apple.quarantine ~/"Library/Screen Savers/Brooklyn.saver"
 ```
