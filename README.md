@@ -20,7 +20,7 @@
 * Make the animations' order random
 
 <p align="center">
-    <img src="https://github.com/answer24/Brooklyn/blob/master/Design/preferences.png?raw=true" alt="Preferences"/>
+    <img src="https://raw.githubusercontent.com/answer24/Brooklyn/master/Design/preferences.png" alt="Preferences"/>
 </p>
 
 ## Installation 📦
