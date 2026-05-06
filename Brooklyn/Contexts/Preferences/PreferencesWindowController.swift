@@ -95,7 +95,6 @@ extension PreferencesWindowController: NSTableViewDataSource {
         guard let item = manager.availableAnimations[safe: row] else { return nil }
         let cell = tableView.dequeueCell(for: self, as: AnimationCellView.self)
         cell.configure(with: item.name, state: manager.selectedAnimations.contains(item) ? .on : .off)
-        debugPrint("Brooklyn | \(item.name)")
         cell.onToogle = { [weak manager] in manager?.toogle(item) }
         return cell
     }
