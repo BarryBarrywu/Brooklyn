@@ -43,12 +43,6 @@ brew install --cask answer24/tap/brooklyn
 3. If `"Brooklyn.saver" can't be opened because it is from an unidentified developer` appears, press `OK`
 4. Open `System Settings` → `Privacy & Security` → click `Open Anyway`
 
-You can also set Brooklyn as your screen saver via Terminal:
-
-```shell
-defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Brooklyn path "$HOME/Library/Screen Savers/Brooklyn.saver"
-```
-
 ## Uninstallation 🗑️
 
 - Right-click on Brooklyn in System Settings and select `Delete Brooklyn`, or
@@ -120,12 +114,6 @@ brew install --cask answer24/tap/brooklyn
 2. 双击 `Brooklyn.saver`
 3. 若弹出"无法打开，因为它来自身份不明的开发者"，点击`好`
 4. 打开`系统设置` → `隐私与安全性`，点击底部的`仍要打开`
-
-安装完成后，可用以下终端命令将 Brooklyn 设为默认屏保：
-
-```shell
-defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Brooklyn path "$HOME/Library/Screen Savers/Brooklyn.saver"
-```
 
 ### 卸载 🗑️
 
