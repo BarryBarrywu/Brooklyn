@@ -5,7 +5,7 @@
 > Screen Saver based on the animations presented during **[Apple Special Event](https://www.youtube.com/watch?v=bfHEnw6Rm-4)** (October 30, 2018) from the Brooklyn Academy of Music, Howard Gilman Opera House. Originally created by [Pedro Carrasco](https://github.com/pedrommcarrasco/Brooklyn).
 
 <p align="center">
-    <img src="https://github.com/pedrommcarrasco/Brooklyn/blob/master/Design/showcase.gif?raw=true" alt="Example"/>
+    <img src="https://raw.githubusercontent.com/answer24/Brooklyn/master/Design/showcase.gif" alt="Example"/>
 </p>
 
 ![GitHub All Releases](https://img.shields.io/github/downloads/answer24/brooklyn/total.svg) [![apm](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/answer24/Brooklyn/blob/master/LICENSE)
