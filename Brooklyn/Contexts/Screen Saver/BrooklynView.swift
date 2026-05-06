@@ -53,6 +53,8 @@ extension BrooklynView {
     override func stopAnimation() {
         super.stopAnimation()
         manager.player.pause()
+        manager.player.removeAllItems()
+        videoLayer.player = nil
     }
 }
 
