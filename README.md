@@ -5,10 +5,10 @@
 > Screen Saver based on the animations presented during **[Apple Special Event](https://www.youtube.com/watch?v=bfHEnw6Rm-4)** (October 30, 2018) from the Brooklyn Academy of Music, Howard Gilman Opera House. Originally created by [Pedro Carrasco](https://github.com/pedrommcarrasco/Brooklyn).
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/answer24/Brooklyn/master/Design/showcase.gif" alt="Example"/>
+    <img src="https://raw.githubusercontent.com/barrybarrywu/Brooklyn/master/Design/showcase.gif" alt="Example"/>
 </p>
 
-![GitHub All Releases](https://img.shields.io/github/downloads/answer24/brooklyn/total.svg) [![apm](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/answer24/Brooklyn/blob/master/LICENSE)
+![GitHub All Releases](https://img.shields.io/github/downloads/barrybarrywu/brooklyn/total.svg) [![apm](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/barrybarrywu/Brooklyn/blob/master/LICENSE)
 
 ## Features ✅
 
@@ -20,7 +20,7 @@
 * Make the animations' order random
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/answer24/Brooklyn/master/Design/preferences.png" alt="Preferences"/>
+    <img src="https://raw.githubusercontent.com/barrybarrywu/Brooklyn/master/Design/preferences.png" alt="Preferences"/>
 </p>
 
 ## Installation 📦
@@ -30,15 +30,15 @@ Before installing, please **close System Settings**.
 ### Homebrew 🍺 (Recommended)
 
 ```shell
-brew tap answer24/tap
-brew install --cask answer24/tap/brooklyn
+brew tap barrybarrywu/tap
+brew install --cask barrybarrywu/tap/brooklyn
 ```
 
 > ⚠️ `brew install --cask brooklyn` (without the tap) installs the original 2020 version and does **not** include bug fixes from this fork.
 
 ### Manual :hand:
 
-1. Download the latest `Brooklyn.saver.zip` from [Releases](https://github.com/answer24/Brooklyn/releases)
+1. Download the latest `Brooklyn.saver.zip` from [Releases](https://github.com/barrybarrywu/Brooklyn/releases)
 2. Unzip and double-click `Brooklyn.saver`
 3. If `"Brooklyn.saver" can't be opened because it is from an unidentified developer` appears, press `OK`
 4. Open `System Settings` → `Privacy & Security` → click `Open Anyway`
@@ -73,11 +73,11 @@ sudo xattr -d com.apple.quarantine ~/"Library/Screen Savers/Brooklyn.saver"
 
 ## Contributing 🙌
 
-Feel free to contribute by opening [issues](https://github.com/answer24/Brooklyn/issues) or [pull requests](https://github.com/answer24/Brooklyn/pulls).
+Feel free to contribute by opening [issues](https://github.com/barrybarrywu/Brooklyn/issues) or [pull requests](https://github.com/barrybarrywu/Brooklyn/pulls).
 
 ## License ⛔
 
-Brooklyn is available under the MIT license. See the [LICENSE](https://github.com/answer24/Brooklyn/blob/master/LICENSE) file for more information. Logo & original animations are Apple's property.
+Brooklyn is available under the MIT license. See the [LICENSE](https://github.com/barrybarrywu/Brooklyn/blob/master/LICENSE) file for more information. Logo & original animations are Apple's property.
 
 ## Acknowledgements 🙏
 
@@ -107,15 +107,15 @@ Bug fixes and improvements in this fork were developed with the assistance of [C
 #### Homebrew（推荐）🍺
 
 ```shell
-brew tap answer24/tap
-brew install --cask answer24/tap/brooklyn
+brew tap barrybarrywu/tap
+brew install --cask barrybarrywu/tap/brooklyn
 ```
 
 > ⚠️ `brew install --cask brooklyn`（不加 tap）安装的是原作者 2020 年的旧版本，**不包含本 fork 的 bug 修复**。
 
 #### 手动安装 :hand:
 
-1. 从 [Releases](https://github.com/answer24/Brooklyn/releases) 下载最新 `Brooklyn.saver.zip`，解压
+1. 从 [Releases](https://github.com/barrybarrywu/Brooklyn/releases) 下载最新 `Brooklyn.saver.zip`，解压
 2. 双击 `Brooklyn.saver`
 3. 若弹出"无法打开，因为它来自身份不明的开发者"，点击`好`
 4. 打开`系统设置` → `隐私与安全性`，点击底部的`仍要打开`

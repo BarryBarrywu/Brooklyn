@@ -10,10 +10,10 @@ import Cocoa
 
 // MARK: - URLType
 enum URLType: String {
-    case help = "https://github.com/answer24/Brooklyn/issues"
-    case github = "https://github.com/answer24/Brooklyn"
+    case help = "https://github.com/barrybarrywu/Brooklyn/issues"
+    case github = "https://github.com/barrybarrywu/Brooklyn"
     case twitter = "https://recents.notion.site/"
-    case version = "https://github.com/answer24/Brooklyn/releases"
+    case version = "https://github.com/barrybarrywu/Brooklyn/releases"
 }
 
 // MARK: Functions
